@@ -1,11 +1,10 @@
 import createHeader from "./header";
-function component() {
-    
-    // return element;
-  }
- 
-//   document.body.appendChild(component());
+import createHome from "./home";
 
 console.log("yax");
 
 createHeader();
+createHome();
+
+
+

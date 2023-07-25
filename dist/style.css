@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +22,9 @@ nav {
   border: 1px solid black;
 }
 
+header {
+  height: 10%;
+}
 header h3 {
   font-size: calc(10px + 2vw);
   padding: 8px 16px;
@@ -31,12 +38,16 @@ header .nav__buttons button:hover {
   background-color: aquamarine;
 }
 
+#content {
+  height: 100%;
+}
 #content .content__intro {
   justify-content: center;
   align-items: center;
+  height: 90%;
 }
 #content .content__intro img {
-  width: 50%;
+  width: 45%;
 }
 
 .black_bg {
