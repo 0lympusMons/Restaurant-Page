@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+header h3 {
+  font-size: 40px;
+  padding: 8px 16px;
+}
+header .nav__buttons button {
+  padding: 0 32px;
+  border: none;
+  border-left: 1px solid black;
+}
+header .nav__buttons button:hover {
+  background-color: aquamarine;
+}
+
+#content .content__intro {
+  justify-content: center;
+  align-items: center;
+}
+#content .content__intro img {
+  width: 50%;
+}
+
+.black_bg {
+  background-color: black;
+  color: white;
+  padding: 3px 8px;
+}
+
+.intro--logo {
+  font-size: 5vw;
+}
+
+.numberOneBest {
+  margin-top: 10px;
+  font-size: 2vw;
+}/*# sourceMappingURL=style.css.map */
