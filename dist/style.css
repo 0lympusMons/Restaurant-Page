@@ -19,7 +19,7 @@ nav {
 }
 
 header h3 {
-  font-size: 40px;
+  font-size: calc(10px + 2vw);
   padding: 8px 16px;
 }
 header .nav__buttons button {
