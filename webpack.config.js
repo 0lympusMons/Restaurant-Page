@@ -8,14 +8,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         // publicPath: 'pathOrUrlWhenProductionBuild',
-        clean: true,
+        // clean: true,
     },
     module: {
         rules: [
-            {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-              },
               {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
@@ -38,9 +34,5 @@ module.exports = {
     resolve: {
     },
     devtool: 'source-map',
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Restaurant',
-          }),
-    ]
+
 };

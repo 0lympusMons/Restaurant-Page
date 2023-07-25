@@ -6,6 +6,6 @@ function component() {
  
 //   document.body.appendChild(component());
 
-console.log("yaaaaaaaawwww")
+console.log("yax");
 
 createHeader();

@@ -1,2 +1,2 @@
-(()=>{"use strict";console.log("yaaaaaaaawwww"),function(){let a=document.createElement("div");document.appendChild(a)}()})();
+(()=>{"use strict";console.log("yax"),function(){let e=document.querySelector("#content"),t=document.createElement("header"),n=document.createElement("nav"),c=document.createElement("h3"),d=document.createElement("div"),a=document.createElement("button"),o=document.createElement("button"),l=document.createElement("button");c.innerText="Lechon sa Lacion",a.innerText="Home",o.innerText="Menu",l.innerText="About",n.classList.add("flex"),d.classList.add("flex","nav__buttons"),e.appendChild(t),t.appendChild(n),n.appendChild(c),n.appendChild(d),d.append(a,o,l)}()})();
 //# sourceMappingURL=bundle.js.map
