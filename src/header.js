@@ -1,3 +1,7 @@
+import createHome from "./home";
+import createMenu from "./menu";
+import createAbout from "./about";
+
 function createHeader(){
     let pageContent = document.querySelector('#content');
 
@@ -27,6 +31,23 @@ function createHeader(){
     nav.appendChild(logo);
     nav.appendChild(buttonWrapper);
     buttonWrapper.append(homeButton, menuButton, aboutButton);
+
+
+    // content should have class="temporary-content"
+    homeButton.onclick = ()=>{
+        document.querySelector('.temporary-content').remove();
+        createHome();
+    };
+
+    menuButton.onclick = () => {
+        document.querySelector('.temporary-content').remove();
+        createMenu();
+    }
+
+    aboutButton.onclick = ()=> {
+        document.querySelector('.temporary-content').remove();
+        createAbout();
+    }
 
     
 }

@@ -13,7 +13,7 @@ function createHome(){
     introLogo.innerText = 'Lechon sa Lacion';
     introLogoDesc.innerHTML = '<span class="black_bg">No. 1 Best (Dili mani lechon ang pic)</span>';
 
-    contentIntro.classList.add('content__intro', 'flex');
+    contentIntro.classList.add('content__intro', 'flex', 'temporary-content');
     introTextWrapper.classList.add('flex-column');
     introLogo.classList.add('intro--logo');
     introLogoDesc.classList.add('numberOneBest');
