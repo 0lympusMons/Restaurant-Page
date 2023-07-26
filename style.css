@@ -1,8 +1,11 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -63,4 +66,48 @@ header .nav__buttons button:hover {
 .numberOneBest {
   margin-top: 10px;
   font-size: 2vw;
+}
+
+.menu__text {
+  font-size: 5vw;
+  color: white;
+  background-color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+.menu__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+.menu__item--2 img {
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+  height: 300px;
+}
+.menu__item--3 img {
+  border: 1px solid black;
+  -o-object-position: 0% 1%;
+     object-position: 0% 1%;
+}
+
+.menu__item:hover .img__container {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
