@@ -4,7 +4,7 @@ import createHome from "./home";
 console.log("yax");
 
 createHeader();
-createHome();
+// createHome();
 
 
 
