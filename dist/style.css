@@ -20,6 +20,11 @@ body {
   flex-direction: column;
 }
 
+.full-height-width {
+  height: 90%;
+  width: 100%;
+}
+
 nav {
   justify-content: space-between;
   border: 1px solid black;
@@ -110,4 +115,14 @@ header .nav__buttons button:hover {
 
 .menu__item:hover .img__container {
   background-color: black;
+}
+
+.content__wrapper {
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */
