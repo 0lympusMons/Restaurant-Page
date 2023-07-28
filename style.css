@@ -20,6 +20,11 @@ body {
   flex-direction: column;
 }
 
+.full-height-width {
+  height: 90%;
+  width: 100%;
+}
+
 nav {
   justify-content: space-between;
   border: 1px solid black;
@@ -68,6 +73,18 @@ header .nav__buttons button:hover {
   font-size: 2vw;
 }
 
+.temporary-content {
+  flex-grow: 1;
+}
+
+.flex.menu__text--wrapper {
+  margin-top: 40px;
+}
+
+.menu__wrapper {
+  margin-top: 50px;
+}
+
 .menu__text {
   font-size: 5vw;
   color: white;
@@ -91,6 +108,12 @@ header .nav__buttons button:hover {
   justify-content: space-between;
   align-items: center;
 }
+.menu__item--name {
+  font-size: calc(1rem + 1vw);
+}
+.menu__item--description {
+  font-size: calc(1rem + 0.5vw);
+}
 .menu__item img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -108,6 +131,49 @@ header .nav__buttons button:hover {
      object-position: 0% 1%;
 }
 
-.menu__item:hover .img__container {
-  background-color: black;
+.img__container {
+  position: relative;
+}
+
+.menu__item .overlay {
+  background-color: rgba(0, 0, 0, 0.207);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item .overlay .price {
+  color: white;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  font-size: calc(1rem + 2vw);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.menu__item img {
+  filter: blur(0px);
+  transition: 0.3s;
+}
+.menu__item:hover .overlay {
+  opacity: 1;
+  transition: 0.3s;
+}
+.menu__item:hover img {
+  filter: blur(2px);
+  transition: 0.3s;
+}
+
+.content__wrapper {
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */
