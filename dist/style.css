@@ -163,11 +163,11 @@ header .nav__buttons button:hover {
   filter: blur(0px);
   transition: 0.3s;
 }
-.menu__item:hover .overlay {
+.menu__item .overlay:hover {
   opacity: 1;
   transition: 0.3s;
 }
-.menu__item:hover img {
+.menu__item img:hover {
   filter: blur(2px);
   transition: 0.3s;
 }
