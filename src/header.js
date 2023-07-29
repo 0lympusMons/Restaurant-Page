@@ -45,6 +45,7 @@ function createHeader(){
     }
 
     aboutButton.onclick = ()=> {
+
         document.querySelector('.temporary-content').remove();
         createAbout();
     }
