@@ -108,7 +108,7 @@ header .nav__buttons button:hover {
 }
 
 .menu__text {
-  font-size: 5vw;
+  font-size: clamp(40px, 3vw, 3vw);
   color: white;
   background-color: black;
   -webkit-user-select: none;
@@ -124,7 +124,7 @@ header .nav__buttons button:hover {
   align-items: center;
 }
 .menu__item--name {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.5vw);
 }
 .menu__item--description {
   color: white;
@@ -132,18 +132,17 @@ header .nav__buttons button:hover {
   width: -moz-max-content;
   width: max-content;
   padding: 6px 16px;
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1rem + 0.05vw);
 }
 .menu__item img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 }
 .menu__item--2 img {
   -o-object-position: 0% 0%;
      object-position: 0% 0%;
-  height: 300px;
 }
 .menu__item--3 img {
   border: 1px solid black;
