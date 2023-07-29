@@ -22,42 +22,52 @@ body {
 
 .full-height-width {
   height: 90%;
-  width: 100%;
-}
-
-.full-height-width {
-  height: 90%;
-  width: 100%;
+  width: 80%;
 }
 
 nav {
   justify-content: space-between;
-  border: 1px solid black;
+  width: 100%;
+  align-items: center;
 }
 
 header {
   height: 10%;
+  display: flex;
+  justify-content: space-around;
 }
 header h3 {
   font-size: calc(10px + 2vw);
   padding: 8px 16px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+header .nav__buttons {
+  gap: 1vw;
 }
 header .nav__buttons button {
   padding: 0 32px;
   border: none;
-  border-left: 1px solid black;
+  height: 58px;
+  box-shadow: rgba(0, 0, 0, 0.1803921569) 1px 1px 5px;
 }
 header .nav__buttons button:hover {
-  background-color: aquamarine;
+  background-color: #89693c;
+  color: white;
+  transition: 0.3s;
 }
 
 #content {
   height: 100%;
+  max-width: 82rem;
+  margin: auto;
 }
 #content .content__intro {
   justify-content: center;
   align-items: center;
   height: 90%;
+  width: 80%;
+  margin: auto;
 }
 #content .content__intro img {
   width: 45%;
@@ -70,16 +80,17 @@ header .nav__buttons button:hover {
 }
 
 .intro--logo {
-  font-size: 5vw;
+  font-size: clamp(1rem, 5vw, 59px);
 }
 
 .numberOneBest {
   margin-top: 10px;
-  font-size: 2vw;
+  font-size: clamp(8px, 2vw, 27px);
 }
 
 .temporary-content {
   flex-grow: 1;
+  margin: auto;
 }
 
 .flex.menu__text--wrapper {
@@ -179,6 +190,15 @@ header .nav__buttons button:hover {
 
 .content__wrapper {
   margin: auto;
+}
+
+q.quote {
+  font-size: clamp(1rem, 1rem + 1vw, 0.5rem + 1vw);
+}
+
+h1.deformed-pig {
+  font-size: clamp(1rem, 1.5rem + 1vw, 1.5rem + 1vw);
+  margin-bottom: 21px;
 }
 
 footer {
