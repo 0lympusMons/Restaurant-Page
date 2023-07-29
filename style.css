@@ -25,6 +25,11 @@ body {
   width: 100%;
 }
 
+.full-height-width {
+  height: 90%;
+  width: 100%;
+}
+
 nav {
   justify-content: space-between;
   border: 1px solid black;
