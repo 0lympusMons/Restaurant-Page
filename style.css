@@ -218,6 +218,7 @@ footer {
   margin-top: auto;
   align-items: center;
   height: 50px;
+  white-space: break-spaces;
 }
 footer a {
   text-decoration: none;
