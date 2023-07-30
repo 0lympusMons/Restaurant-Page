@@ -11,7 +11,7 @@ function createMenu() {
 
 
                     <div class="img__container">
-                        <img src="../src/img/50-discount-lechon.jpg" alt="50% discount baboy">
+                        <img src="./img/50-discount-lechon.jpg" alt="50% discount baboy">
                         <div class="overlay">
                             <h2 class="price">P99</h2>
                         </div>
@@ -28,7 +28,7 @@ function createMenu() {
 
                     <div class="img__container">
 
-                        <img src="../src/img/lechon-mamoy.jpg" alt="50% discount baboy">
+                        <img src="./img/lechon-mamoy.jpg" alt="50% discount baboy">
                         <div class="overlay">
                             <h2 class="price">P299</h2>
 
@@ -44,7 +44,7 @@ function createMenu() {
 
                     <div class="img__container">
 
-                        <img src="../src/img/shiny-lechon.png" alt="50% discount baboy">
+                        <img src="./img/shiny-lechon.png" alt="50% discount baboy">
                         <div class="overlay">
                             <h2 class="price">P349</h2>
 
