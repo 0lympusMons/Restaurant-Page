@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=REM:wght@100;300;500;800&display=swap");
+:root {
+  --Pacifico: "Pacifico", cursive;
+  --REM: "REM", sans-serif;
+  --brown: #89693c;
+}
+
 html,
 body {
   height: 100%;
@@ -9,6 +16,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--REM);
 }
 
 .flex {
@@ -38,9 +46,11 @@ header {
 }
 header h3 {
   font-size: calc(10px + 2vw);
+  font-family: var(--Pacifico);
   padding: 8px 16px;
   flex-grow: 1;
   flex-shrink: 0;
+  color: var(--brown);
 }
 header .nav__buttons {
   gap: 1vw;
@@ -74,13 +84,15 @@ header .nav__buttons button:hover {
 }
 
 .black_bg {
-  background-color: black;
+  background-color: var(--brown);
   color: white;
   padding: 3px 8px;
 }
 
 .intro--logo {
+  font-family: var(--Pacifico);
   font-size: clamp(1rem, 5vw, 59px);
+  color: var(--brown);
 }
 
 .numberOneBest {
@@ -110,7 +122,7 @@ header .nav__buttons button:hover {
 .menu__text {
   font-size: clamp(40px, 3vw, 3vw);
   color: white;
-  background-color: black;
+  background-color: var(--brown);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -128,7 +140,7 @@ header .nav__buttons button:hover {
 }
 .menu__item--description {
   color: white;
-  background: black;
+  background: var(--brown);
   width: -moz-max-content;
   width: max-content;
   padding: 6px 16px;
@@ -204,4 +216,10 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: auto;
+  align-items: center;
+  height: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
